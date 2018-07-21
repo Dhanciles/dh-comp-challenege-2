@@ -82,7 +82,7 @@ section {
 a {
   background-color: #EFEFEF; 
   color: #919191;
-  cursor: pointer; 
+  cursor: pointer;  
 }
 
 .playlist {
@@ -98,7 +98,7 @@ a {
 }
 
 .specials-count {
-  
+
 }
 
 
