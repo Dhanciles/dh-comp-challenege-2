@@ -1,0 +1,36 @@
+/* Declarations through out web page elemets */ 
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #EFEFEF; 
+}
+
+/* Styling for web page's header*/
+header {
+  background-color: #000000;
+  font-weight: 400; 
+}
+
+menu {
+    display: flex; 
+    flex-direction: row;   
+}
+
+li {
+  list-style: none;
+  color: #828282; 
+  font-size: 16px; 
+}
+
+.shares {
+  color: #ffffff;
+}
+
+.admin-link {
+  font-size: 12px; 
+}
+
+/* Styling for web page's main content */
+h1 {
+  font-weight: 600; 
+  color: #4D4D4D; 
+}
