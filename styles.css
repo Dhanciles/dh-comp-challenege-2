@@ -1,0 +1,105 @@
+/* Declarations through out web page elemets */ 
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #EFEFEF; 
+  box-sizing: border-box;
+}
+
+/* Styling for web page's header*/
+header {
+  background-color: #000000;
+  font-weight: 400; 
+}
+
+menu {
+    display: flex; 
+    flex-direction: row;   
+}
+
+li {
+  list-style: none;
+  color: #828282; 
+  font-size: 16px; 
+}
+
+.shares {
+  color: #ffffff;
+}
+
+.admin-link {
+  font-size: 12px; 
+}
+
+/* Styling for web page's main content */
+h1 {
+  color: #4D4D4D; 
+  font-size: 20px; 
+  font-weight: 600; 
+}
+
+article {
+  height: 400px;
+  width: 200px;
+}
+
+/* Header portion of profile box */
+.profile-header {
+  height: 150px;
+  background-color: #25d16a; 
+  color: #ffffff;
+}
+
+.show-month {
+  font-size: 12px; 
+  font-weight: 100; 
+}
+
+.show-date {
+  font-size: 20px; 
+  font-weight: 400; 
+}
+
+.profile-content {
+  background-color: #ffffff; 
+}
+
+/* Profile information */
+section {
+  display: flex; 
+  flex-direction: column; 
+  background-color: #ffffff; 
+}
+
+.performer {
+  font-size: 16px; 
+}
+
+.performance-date-time {
+  font-size: 12px; 
+  font-weight: 100; 
+}
+
+a {
+  background-color: #EFEFEF; 
+  color: #919191;
+  cursor: pointer;  
+}
+
+.playlist {
+
+}
+
+.specials {
+
+}
+
+.total-specials {
+
+}
+
+.specials-count {
+
+}
+
+
+
