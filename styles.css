@@ -60,13 +60,15 @@ article {
 }
 
 .show-date {
-  /*font-size: 20px; */
-  font-weight: 400; 
+  font-size: 2rem; 
+  font-weight: 400;
+  color: #ffffff; 
   /*margin-top: 5px; */
 }
 
 .profile-content {
   background-color: #ffffff; 
+  padding-left: 10px; 
 }
 
 /* Profile information */
@@ -84,30 +86,42 @@ section {
 .performance-date-time {
   font-size: 12px; 
   font-weight: 100; 
-  margin-top: 0;
+  margin: 0;
 }
+
+.performer-link {
+  /*border: 2px solid #000000;*/
+  /*margin: 5px auto;*/
+  /*padding: 5px;
+*/}
 
 a {
+  height: 2rem; 
+  width: 1rem; 
   background-color: #EFEFEF; 
   color: #919191;
-  cursor: pointer;  
+  cursor: pointer; 
+  font-size: 12px;
 }
 
-.playlist {
-
+.playlist { 
+  margin-bottom: 0; 
 }
 
 .specials {
+  margin-top: 0; 
 
 }
 
 .total-specials {
+  margin-bottom: 0;
 
 }
 
 .specials-count {
+  margin-top: 0; 
   font-weight: 400;
-  /*font-size:*/ 
+  font-size: 2rem;  
 
 }
 
