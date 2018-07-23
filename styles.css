@@ -12,14 +12,14 @@ header {
   font-weight: 400; 
   height: 150px;
   display: flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
 }
 
 menu {
     display: flex; 
-    flex-direction: row;
-    align-items: center; 
-    margin-top: 4rem; 
+    margin: 7rem 1rem 2rem 1.25rem;
+    /*flex-direction: row;
+    margin-top: 20px;*/ 
 }
 
 .menu-icons {
@@ -43,9 +43,7 @@ li {
 .admin-container {
   display: flex; 
   flex-direction: row; 
-  justify-content: flex-end;
-  margin-left: 70rem;   
-  text-align: right; 
+  align-content: end;   
 }
 
 .admin-link {
@@ -78,7 +76,7 @@ h1 {
 }
 
 article {
-  width: 300px;
+  width: 270px;
   box-shadow: 3px 4px #cccccc;
 }
 
@@ -89,8 +87,11 @@ article:hover {
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; 
-  margin: 0 auto;
+  grid-gap: 15px; 
+  align-content: space-around;
+  justify-content: space-between; 
+  /*margin-right: 20px;*/
+  margin-left: 20px;
 }
 
 /* Header portion of profile box */
@@ -241,17 +242,20 @@ section {
   }
 }
 
-/*@media screen and (max-width: 636px) {
+@media screen and (max-width: 636px) {
   main { 
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
-}*/
+
+
+}
 
 @media screen and (max-width: 320px) {
-  main { 
+  /*main { 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
+  }*/
 }
