@@ -18,20 +18,32 @@ header {
 menu {
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: auto; 
+    align-items: center; 
+    margin-top: 4rem; 
 }
 
 .menu-icons {
   height: 1rem;
-  width: 1rem;
+  width: 2rem;
+  margin-right: 10px; 
 }
 
 li {
   list-style: none;
   color: #828282; 
-  font-size: 14px; 
-  padding-left: 5px; 
+  font-size: 18px; 
+  font-weight: 400; 
+  margin-right: 2rem;
+}
+
+.logo-container {
+  /*background-color: #000000;*/
+}
+
+.site-logo {
+  height: 2rem; 
+  width: 2rem;
+  background-color: #000000;
 }
 
 .shares {
@@ -56,7 +68,7 @@ h1 {
 }
 
 article {
-  height: 500px;
+  /*height: 500px;*/
   width: 250px;
   box-shadow: 3px 4px #cccccc;
 }
@@ -145,7 +157,6 @@ section {
   display: flex; 
   flex-direction: column; 
   background-color: #ffffff; 
-  height: 350px;
 }
 
 .performer {
