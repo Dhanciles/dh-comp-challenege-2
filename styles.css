@@ -223,3 +223,35 @@ section {
   font-weight: 400;
   font-size: 2rem;  
 }
+
+/* Media Queries */
+@media screen and (max-width: 1300px){
+  main { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  main { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+/*@media screen and (max-width: 636px) {
+  main { 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+}*/
+
+@media screen and (max-width: 320px) {
+  main { 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+}
