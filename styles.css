@@ -11,42 +11,64 @@ header {
   background-color: #000000;
   font-weight: 400; 
   height: 150px;
-  display: flex; 
-  justify-content: space-between;
+  display: flex;
+  /*justify-content: space-between;*/
 }
 
 menu {
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: auto; 
+    align-items: center; 
+    margin-top: 4rem; 
 }
 
 .menu-icons {
   height: 1rem;
-  width: 1rem;
+  width: 2rem;
+  margin-right: 10px; 
 }
 
 li {
   list-style: none;
   color: #828282; 
-  font-size: 14px; 
-  padding-left: 5px; 
+  font-size: 18px; 
+  font-weight: 400; 
+  margin-right: 2rem;
 }
 
 .shares {
   color: #ffffff;
 }
 
+.admin-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-end;
+  margin-left: 70rem;   
+  text-align: right; 
+}
+
 .admin-link {
-  font-size: 12px; 
+  font-size: 14px; 
+  font-weight: 400;  
   color: #828282;
 }
 
 .admin-icons {
-  height: 10px;
-  width: 10px;
+  height: 1rem;
+  width: 2rem;
+  margin-top: 15px; 
 }
+
+/*.logo-container {
+  background-color: #000000;
+}*/
+
+/*.site-logo {
+  height: 2rem; 
+  width: 2rem;
+  background-color: #000000;
+}*/
 
 /* Styling for web page's main content */
 h1 {
@@ -56,44 +78,53 @@ h1 {
 }
 
 article {
-  height: 500px;
-  width: 250px;
+  width: 300px;
   box-shadow: 3px 4px #cccccc;
+}
+
+article:hover {
+  cursor: pointer;
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; 
+  margin: 0 auto;
 }
 
 /* Header portion of profile box */
 .profile-header {
+  display: flex;
+  justify-content: space-between;
   height: 150px;
   background-color: #25d16a; 
   color: #ffffff;
 }
 
 .share-icon {
-  height: 1rem; 
-  width: 1rem;
+  height: 2rem; 
+  width: 2rem;
+  margin-top: 10px; 
+  margin-left: 8px; 
 }
 
-.share-date-container {
-  display: flex;
-  justify-content: space-between;
+.month-day {
+  margin-right: 8px;
 }
 
 .show-month {
-  font-size: 12px; 
-  font-weight: 100; 
+  font-size: 16px; 
+  font-weight: 400; 
+  color: #C21734;
+  margin-bottom: 0; 
 }
 
 .show-date {
   font-size: 2rem; 
   font-weight: 400;
-  color: #ffffff; 
-  /*margin-top: 5px; */
+  color: #C21734; 
+  margin: 0;
 }
 
 .profile-content {
@@ -145,7 +176,6 @@ section {
   display: flex; 
   flex-direction: column; 
   background-color: #ffffff; 
-  height: 350px;
 }
 
 .performer {
@@ -181,15 +211,14 @@ section {
 
 .specials {
   margin-top: 0; 
-
 }
 
 .total-specials {
   margin-bottom: 0;
-
 }
 
 .specials-count {
+  margin-bottom: 0;
   margin-top: 0; 
   font-weight: 400;
   font-size: 2rem;  
