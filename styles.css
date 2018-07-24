@@ -1,4 +1,5 @@
-/* Declarations through out web page elemets */ 
+ /* Declarations through out web page elemets */ 
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #EFEFEF; 
@@ -7,6 +8,7 @@ body {
 }
 
 /* Styling for web page's header*/
+
 .site-header {
   background-color: #000000;
   font-weight: 400; 
@@ -21,11 +23,16 @@ menu {
   margin-top: 5rem; 
 }
 
-
 .menu-icons {
   height: 1rem;
   width: 2rem;
   margin-right: 10px; 
+}
+
+.menu-icons:hover {
+  height: 2rem;
+  width: 2rem;
+  transition: 0.5s; 
 }
 
 li {
@@ -34,6 +41,7 @@ li {
   font-size: 18px; 
   font-weight: 400; 
   margin-right: 2rem;
+  cursor: pointer; 
 }
 
 .shares {
@@ -44,6 +52,7 @@ li {
   display: inline-flex;
   flex-direction: row; 
   margin-right: 1rem; 
+  cursor: pointer; 
 }
 
 .admin-link {
@@ -58,6 +67,12 @@ li {
   margin-top: 15px; 
 }
 
+.admin-icons:hover {
+  height: 2rem;
+  width: 3.5rem;
+  transition: 0.5s; 
+}
+
 .logo-container {
   display: flex; 
   flex-direction: column;
@@ -70,7 +85,14 @@ li {
   margin-bottom: 1rem; 
 }
 
+.site-logo:hover {
+  height: 8rem;
+  width: 8rem;
+  transition: 0.5s; 
+}
+
 /* Styling for web page's main content */
+
 h1 {
   color: #4D4D4D; 
   font-size: 20px; 
@@ -79,12 +101,13 @@ h1 {
 }
 
 article {
-  /*width: 270px;*/
   box-shadow: 3px 4px #cccccc;
 }
 
 article:hover {
   cursor: pointer;
+  -webkit-transform: rotateY(45deg);
+  transition: 0.5s;
 }
 
 main {
@@ -95,6 +118,7 @@ main {
 }
 
 /* Header portion of profile box */
+
 .profile-header {
   display: flex;
   justify-content: space-between;
@@ -108,6 +132,12 @@ main {
   width: 2rem;
   margin-top: 10px; 
   margin-left: 8px; 
+}
+
+.share-icon:hover {
+  height: 4rem;
+  width: 4rem;
+  transition: 0.5s;
 }
 
 .month-day {
@@ -173,6 +203,7 @@ main {
 }
 
 /* Profile information */
+
 section {
   display: flex; 
   flex-direction: column; 
@@ -185,9 +216,10 @@ section {
 }
 
 .performance-date-time {
-  font-size: 12px; 
+  font-size: 14px; 
   font-weight: 100; 
   margin-bottom: 20px;
+  margin-top: 0; 
 }
 
 .performer-link {
@@ -203,11 +235,13 @@ section {
   font-size: 12px;
   word-wrap: break-word;
   text-decoration: none; 
-  padding: 8px;
+  padding: 1rem; 
+  margin-left: 15px;
 }
 
 .playlist { 
-  margin-bottom: 0; 
+  margin-bottom: 0;
+  margin-top: 25px;  
 }
 
 .specials {
@@ -219,13 +253,13 @@ section {
 }
 
 .specials-count {
-  margin-bottom: 0;
-  margin-top: 0; 
+  margin: 0; 
   font-weight: 400;
   font-size: 2rem;  
 }
 
 /* Media Queries */
+
 @media screen and (max-width: 1259px){
  .site-logo {
   margin-left: 2.5rem;
@@ -273,21 +307,48 @@ section {
 @media screen and (max-width: 745px) {
   main { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 10px; 
     margin: 1rem;
   }
-
-/*   menu {
-  margin: 0; 
-}*/
-
 }
 
-/*@media screen and (max-width: 320px) {
-  main { 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
+@media screen and (max-width: 525px) {
+  menu {
+    margin-top: 1rem;
   }
-}*/
+
+  .profile-header {
+    height: 225px; 
+  }
+
+  .site-logo {
+    height: 5rem; 
+    width: 5rem; 
+    margin-left: 2.5rem;
+    margin-bottom: 0.5rem;  
+  }
+
+  .admin-container {
+    margin-right: 0.5rem;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-right: 1rem;
+    text-rendering: hidden; 
+    font-size: 14px;    
+  }
+
+  .menu-icons {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .site-logo {
+    margin-left: 3rem;
+  }
+}
