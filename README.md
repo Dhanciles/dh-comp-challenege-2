@@ -6,7 +6,7 @@
 ###### Below are photos of the original comp given and the website I created. 
 
 
-<img src="images/comp.png">
+<img src="Screen Shot 2018-07-24 at 9.03.06 AM.png">
 
 
 <img src="images/mywork-screenshot.png">
