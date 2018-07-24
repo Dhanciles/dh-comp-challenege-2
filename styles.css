@@ -41,9 +41,10 @@ li {
 }
 
 .admin-container {
-  display: flex; 
+  display: inline-flex;
   flex-direction: row; 
-  align-content: end;   
+  margin-right: 1rem; 
+  /*align-content: end;   */
 }
 
 .admin-link {
@@ -58,21 +59,24 @@ li {
   margin-top: 15px; 
 }
 
-/*.logo-container {
-  background-color: #000000;
-}*/
+.logo-container {
+  display: flex; 
+  flex-direction: column;
+}
 
-/*.site-logo {
-  height: 2rem; 
-  width: 2rem;
-  background-color: #000000;
-}*/
+.site-logo {
+  height: 10vh; 
+  width: 5vw;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem; 
+}
 
 /* Styling for web page's main content */
 h1 {
   color: #4D4D4D; 
   font-size: 20px; 
-  font-weight: 600; 
+  font-weight: 600;
+  margin-left: 20px; 
 }
 
 article {
@@ -87,11 +91,12 @@ article:hover {
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px; 
+  grid-gap: 10px; 
   align-content: space-around;
   justify-content: space-between; 
   /*margin-right: 20px;*/
-  margin-left: 20px;
+  margin-left: 3rem;
+  margin-bottom: 5rem; 
 }
 
 /* Header portion of profile box */
