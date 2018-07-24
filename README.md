@@ -6,7 +6,7 @@
 ###### Below are photos of the original comp given and the website I created. 
 
 
-<img src="images/comp-screenshot.png">
+<img src="images/comp.png">
 
 
 <img src="images/mywork-screenshot.png">
