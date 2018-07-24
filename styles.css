@@ -7,7 +7,7 @@ body {
 }
 
 /* Styling for web page's header*/
-header {
+.site-header {
   background-color: #000000;
   font-weight: 400; 
   height: 150px;
@@ -16,11 +16,11 @@ header {
 }
 
 menu {
-    display: flex; 
-    margin: 7rem 1rem 2rem 1.25rem;
-    /*flex-direction: row;
-    margin-top: 20px;*/ 
+  display:flex;
+  flex-direction: row; 
+  margin-top: 5rem; 
 }
+
 
 .menu-icons {
   height: 1rem;
@@ -44,7 +44,6 @@ li {
   display: inline-flex;
   flex-direction: row; 
   margin-right: 1rem; 
-  /*align-content: end;   */
 }
 
 .admin-link {
@@ -65,10 +64,10 @@ li {
 }
 
 .site-logo {
-  height: 10vh; 
-  width: 5vw;
-  margin-left: 2rem;
-  margin-bottom: 0.5rem; 
+  height: 6rem; 
+  width: 6rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem; 
 }
 
 /* Styling for web page's main content */
@@ -80,7 +79,7 @@ h1 {
 }
 
 article {
-  width: 270px;
+  /*width: 270px;*/
   box-shadow: 3px 4px #cccccc;
 }
 
@@ -90,13 +89,9 @@ article:hover {
 
 main {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px; 
-  align-content: space-around;
-  justify-content: space-between; 
-  /*margin-right: 20px;*/
-  margin-left: 3rem;
-  margin-bottom: 5rem; 
+  margin: 1rem;
 }
 
 /* Header portion of profile box */
@@ -231,36 +226,66 @@ section {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1300px){
-  main { 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+@media screen and (max-width: 1259px){
+ .site-logo {
+  margin-left: 2.5rem;
+  margin-bottom: 0.5rem; 
+  }
+
+  .profile-header {
+    height: 175px; 
   }
 }
 
-@media screen and (max-width: 984px) {
-  main { 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
+@media screen and (max-width: 950px) {
+  .site-header {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .admin-icons {
+    margin-top: 0; 
+  }
+
+  .admin-link {
+    margin: 0;
+  }
+
+  .site-logo {
+    margin-bottom: 0; 
+  }
+
+  menu {
+  display:flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  margin-top: 0; 
+}
+
+ .profile-header {
+    height: 200px; 
   }
 }
 
-@media screen and (max-width: 636px) {
+@media screen and (max-width: 745px) {
   main { 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-gap: 10px; 
+    margin: 1rem;
   }
 
+/*   menu {
+  margin: 0; 
+}*/
 
 }
 
-@media screen and (max-width: 320px) {
-  /*main { 
+/*@media screen and (max-width: 320px) {
+  main { 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-  }*/
-}
+  }
+}*/
