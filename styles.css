@@ -29,6 +29,12 @@ menu {
   margin-right: 10px; 
 }
 
+.menu-icons:hover {
+  height: 2rem;
+  width: 2rem;
+  transition: 0.5s; 
+}
+
 li {
   list-style: none;
   color: #828282; 
@@ -61,6 +67,12 @@ li {
   margin-top: 15px; 
 }
 
+.admin-icons:hover {
+  height: 2rem;
+  width: 3.5rem;
+  transition: 0.5s; 
+}
+
 .logo-container {
   display: flex; 
   flex-direction: column;
@@ -71,6 +83,12 @@ li {
   width: 6rem;
   margin-left: 3rem;
   margin-bottom: 1rem; 
+}
+
+.site-logo:hover {
+  height: 8rem;
+  width: 8rem;
+  transition: 0.5s; 
 }
 
 /* Styling for web page's main content */
@@ -88,6 +106,8 @@ article {
 
 article:hover {
   cursor: pointer;
+  -webkit-transform: rotateY(45deg);
+  transition: 0.5s;
 }
 
 main {
@@ -112,6 +132,12 @@ main {
   width: 2rem;
   margin-top: 10px; 
   margin-left: 8px; 
+}
+
+.share-icon:hover {
+  height: 4rem;
+  width: 4rem;
+  transition: 0.5s;
 }
 
 .month-day {
